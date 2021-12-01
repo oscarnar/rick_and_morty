@@ -13,8 +13,10 @@ class EpisodeItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Ink(
+        ListTileTheme(
+          // TODO: change bacgound color for dark mode
           child: ListTile(
+            
             title: Text(item.name, overflow: TextOverflow.ellipsis),
             subtitle: Text(
               item.episode,
@@ -25,13 +27,6 @@ class EpisodeItem extends StatelessWidget {
               Icons.arrow_forward_ios,
               color: Colors.grey,
             ),
-            onTap: () {
-              // Navigator.of(context).pushNamed(EpisodeDetailPage.routeName,
-              //     arguments: '${item.episode}: ${item.name}');
-              // context
-              //     .read<RickAndMortyBloc>()
-              //     .add(EpisodeFetchById(id: item.id!));
-            },
             contentPadding: const EdgeInsets.symmetric(horizontal: 8),
           ),
         ),

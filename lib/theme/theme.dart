@@ -22,7 +22,6 @@ abstract class ScreenSize {
 
   /// Max width for a large layout.
   static const double large = 1800;
-
 }
 
 class RickAndMortyTheme {
@@ -31,16 +30,14 @@ class RickAndMortyTheme {
   }
 
   static ThemeData get small {
-     return ThemeData(primarySwatch: Colors.red);
-    // return standard.copyWith(primarySwatch: Colors.red);
+    return ThemeData(primarySwatch: Colors.red);
   }
 
   static ThemeData get large {
-     return ThemeData(primarySwatch: Colors.yellow);
-    // return standard.copyWith(primarySwatch: Colors.yellow);
+    return ThemeData(primarySwatch: Colors.blueGrey);
   }
 
-  static ThemeData toDarkTheme(ThemeData current){
+  static ThemeData toDarkTheme(ThemeData current) {
     return standard.copyWith(
       colorScheme: const ColorScheme.dark(),
       brightness: Brightness.dark,
@@ -56,7 +53,7 @@ class RickAndMortyTheme {
     );
   }
 
-  static ThemeData toLightTheme(ThemeData current){
+  static ThemeData toLightTheme(ThemeData current) {
     return large.copyWith(
       colorScheme: const ColorScheme.light(),
       brightness: Brightness.light,
