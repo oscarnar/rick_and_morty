@@ -25,6 +25,10 @@ A simple app to demonstrate auto_route and flutter_bloc.
 <img src="./screenshots/desktop.png" alt="Desktop view" height="250">
 </p>
 
+## Navigation 2.0
+
+![Alt Text](./screenshots/giphy.gif)
+
 ## Installation
 
 - Check if you are in the stable channel of flutter SDK and the version v2.14.0 or higher. [Instruction to change flutter channel](https://github.com/flutter/flutter/wiki/Flutter-build-release-channels#how-to-change-channels).
@@ -49,3 +53,6 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+### See you
+![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
