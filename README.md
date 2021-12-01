@@ -1,5 +1,9 @@
 # Rick and Morty
 
+[![Flutter version](https://img.shields.io/badge/flutter-v2.14.0-blue?logo=flutter)](https://flutter.dev/docs/development/tools/sdk/releases)
+[![style: effective dart](https://img.shields.io/badge/style-effective_dart-40c4ff.svg)](https://github.com/tenhobi/effective_dart)
+[![License: MIT](https://img.shields.io/badge/license-MIT-purple.svg)](https://opensource.org/licenses/MIT)
+
 A simple app to demonstrate auto_route and flutter_bloc.
 
 ## Screenshots
