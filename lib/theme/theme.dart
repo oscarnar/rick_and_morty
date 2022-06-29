@@ -25,16 +25,25 @@ abstract class ScreenSize {
 }
 
 class RickAndMortyTheme {
+  static const double _smallTextScaleFactor = 0.85;
+  static const double _largeTextScaleFactor = 1.05;
+
   static ThemeData get standard {
     return ThemeData(primarySwatch: Colors.green);
   }
 
   static ThemeData get small {
-    return ThemeData(primarySwatch: Colors.red);
+    return ThemeData(
+      primarySwatch: Colors.red,
+      textTheme: convertFontSize(_smallTextScaleFactor),
+    );
   }
 
   static ThemeData get large {
-    return ThemeData(primarySwatch: Colors.blueGrey);
+    return ThemeData(
+      primarySwatch: Colors.blueGrey,
+      textTheme: convertFontSize(_largeTextScaleFactor),
+    );
   }
 
   static ThemeData toDarkTheme(ThemeData current) {
@@ -77,6 +86,50 @@ class RickAndMortyTheme {
       caption: RickAndMortyTextStyle.caption,
       overline: RickAndMortyTextStyle.overline,
       button: RickAndMortyTextStyle.button,
+    );
+  }
+
+  static TextTheme convertFontSize(double factor) {
+    return TextTheme(
+      headline1: RickAndMortyTextStyle.headline1.copyWith(
+        fontSize: _textTheme.headline1!.fontSize! * factor,
+      ),
+      headline2: RickAndMortyTextStyle.headline2.copyWith(
+        fontSize: _textTheme.headline2!.fontSize! * factor,
+      ),
+      headline3: RickAndMortyTextStyle.headline3.copyWith(
+        fontSize: _textTheme.headline3!.fontSize! * factor,
+      ),
+      headline4: RickAndMortyTextStyle.headline4.copyWith(
+        fontSize: _textTheme.headline4!.fontSize! * factor,
+      ),
+      headline5: RickAndMortyTextStyle.headline5.copyWith(
+        fontSize: _textTheme.headline5!.fontSize! * factor,
+      ),
+      headline6: RickAndMortyTextStyle.headline6.copyWith(
+        fontSize: _textTheme.headline6!.fontSize! * factor,
+      ),
+      subtitle1: RickAndMortyTextStyle.subtitle1.copyWith(
+        fontSize: _textTheme.subtitle1!.fontSize! * factor,
+      ),
+      subtitle2: RickAndMortyTextStyle.subtitle2.copyWith(
+        fontSize: _textTheme.subtitle2!.fontSize! * factor,
+      ),
+      bodyText1: RickAndMortyTextStyle.bodyText1.copyWith(
+        fontSize: _textTheme.bodyText1!.fontSize! * factor,
+      ),
+      bodyText2: RickAndMortyTextStyle.bodyText2.copyWith(
+        fontSize: _textTheme.bodyText2!.fontSize! * factor,
+      ),
+      caption: RickAndMortyTextStyle.caption.copyWith(
+        fontSize: _textTheme.caption!.fontSize! * factor,
+      ),
+      overline: RickAndMortyTextStyle.overline.copyWith(
+        fontSize: _textTheme.overline!.fontSize! * factor,
+      ),
+      button: RickAndMortyTextStyle.button.copyWith(
+        fontSize: _textTheme.button!.fontSize! * factor,
+      ),
     );
   }
 }
