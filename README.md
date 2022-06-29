@@ -33,6 +33,26 @@ A simple app to demonstrate auto_route and flutter_bloc.
 
 ![Alt Text](./screenshots/giphy.gif)
 
+## Icons
+### For Android and iOS
+For mobile platforms, I used [Flutter launcher icons](https://pub.dev/packages/flutter_launcher_icons).
+<p>
+<img src="./screenshots/icons_mobile.jpg" alt="Icons on mobile" width="250">
+</p>
+
+### For Web
+In order to generate different icon sizes, I used [Favicon generator](https://favicon.io/).
+<p>
+<img src="./screenshots/icons_web.png" alt="Icons on web" width="650">
+</p>
+
+### For Windows
+I don't use Windows sorry, but in theory it works, I changed the .ico in `indows/runner/resources/app_icon.ico`.
+
+### For Linux
+In Linux, it will depend on the package manager that you use, so there is nothing to do in Flutter.
+
+
 ## Installation
 
 - Check if you are in the stable channel of flutter SDK and the version v2.14.0 or higher. [Instruction to change flutter channel](https://github.com/flutter/flutter/wiki/Flutter-build-release-channels#how-to-change-channels).
