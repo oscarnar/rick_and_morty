@@ -40,9 +40,22 @@ dependencies:
   rick_and_morty_api: ^0.1.1
 
 dev_dependencies:
+  flutter_launcher_icons: ^0.9.3
   flutter_lints: ^1.0.0
   flutter_test:
     sdk: flutter
+
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icons/icon.jpg"
+
+  image_path_android: "assets/icons/icon.jpg"
+  image_path_ios: "assets/icons/icon.jpg"
+  android: true # can specify file name here e.g. "ic_launcher"
+  ios: true # can specify file name here e.g. "My-Launcher-Icon"
+  adaptive_icon_background: "#959595"
+  adaptive_icon_foreground: "assets/launcher_icons/icon.png"
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
