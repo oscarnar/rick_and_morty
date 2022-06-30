@@ -6,6 +6,8 @@
 
 A simple app to demonstrate auto_route and flutter_bloc.
 
+  __NOTE: If you have a recent Flutter version, I strongly recommend to use [Flutter version manager (fvm)](https://fvm.app/es/) to change Flutter version and avoid some issues. Flutter v2.5.0 and dart v2.14.0__
+
 ## Screenshots
 
 <p>
@@ -55,7 +57,9 @@ In Linux, it will depend on the package manager that you use, so there is nothin
 
 ## Installation
 
-- Check if you are in the stable channel of flutter SDK and the version v2.14.0 or higher. [Instruction to change flutter channel](https://github.com/flutter/flutter/wiki/Flutter-build-release-channels#how-to-change-channels).
+- Check if you are in the stable channel of flutter SDK version v2.5.0 and the dart version v2.14.0. [Instruction to change flutter channel](https://github.com/flutter/flutter/wiki/Flutter-build-release-channels#how-to-change-channels). 
+  
+  __NOTE: If you have a recent version, I strongly recommend to use [Flutter version manager (fvm)](https://fvm.app/es/) to change Flutter version and avoid some issues.__
 - Clone the repo
   ```sh
   git clone https://github.com/oscarnar/rick_and_morty.git
