@@ -21,7 +21,7 @@ void main() {
 class MyApp extends StatelessWidget {
   MyApp({Key? key}) : super(key: key);
 
-  final AppRouter _appRouter = AppRouter();  
+  final AppRouter _appRouter = AppRouter();
 
   // This widget is the root of your application.
   @override
@@ -51,7 +51,8 @@ class MyApp extends StatelessWidget {
         ),
       ],
       child: BlocBuilder<ThemeCubit, ThemeState>(
-        buildWhen: (previous, current) => previous.themeData != current.themeData,
+        buildWhen: (previous, current) =>
+            previous.themeData != current.themeData,
         builder: (context, state) {
           return LayoutBuilder(builder: (context, constraints) {
             BlocProvider.of<ThemeCubit>(context).responsiveTheme(constraints);
